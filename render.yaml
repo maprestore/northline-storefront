@@ -2,14 +2,14 @@ services:
   - type: web
     name: nk-great-global-enterprise
     runtime: static
-    buildCommand: npm run build
-    staticPublishPath: dist
+    buildCommand: ""
+    staticPublishPath: .
     previews:
       generation: automatic
     routes:
       - type: rewrite
         source: /admin
-        destination: /index.html
+        destination: /admin.html
       - type: rewrite
         source: /*
         destination: /index.html
